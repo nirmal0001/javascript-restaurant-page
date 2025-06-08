@@ -2,7 +2,7 @@ import "./styles.css"
 import home from "./home.js"
 import menu from "./menu.js"
 import about from "./about.js";
-class Cafe {
+(function hide(){class Cafe {
     constructor(){
         this.navButtons = null;
         this.main = null;
@@ -10,6 +10,7 @@ class Cafe {
     init(){
         this.dom();
         this.eventLisner();
+        home(this.main);
     }
 
     dom(){
@@ -52,7 +53,9 @@ class Cafe {
                 break;
         }
     }
-}
+    }
 
-const cafe = new Cafe();
-cafe.init();
+    const cafe = new Cafe();
+    cafe.init();
+}
+)()
