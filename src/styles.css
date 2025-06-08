@@ -1,0 +1,124 @@
+body {
+    background-image: url(./assets/coffer-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+/* heeader css */
+header {
+    background-color: rgb(80, 94, 99 , 50%);
+}
+nav {
+    display: grid;
+    gap: 20px;
+    height: 70px;
+    grid-template-columns: repeat(3, 80px);
+    justify-content: center;
+    align-content: center;
+}
+
+nav button {
+    display: inline-block;
+    height: 48px;
+    width: 90px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav button:hover {
+    background-color: #5d737a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+nav button:active {
+    transform: scale(0.95);
+    background-color: #364247;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-selected {
+    background-color: rgb(80, 94, 99);
+}
+/* end header css */
+
+/* content div css */
+#content {
+    display:flex;
+    width: clamp(35ch, 70vw, 70ch);
+    justify-content: center;
+    text-align: center;
+    margin-inline: auto;
+    flex-direction: column;
+    border: 6px solid rgb(80, 94, 99);
+    border-radius: 12px;
+    margin-top: 30px;
+    background-color: rgb(80, 94, 99 , 30%);
+    padding: 30px 60px;
+}
+
+.border-style {
+    border: 3px solid rgb(80, 94, 99);
+    background-color: rgb(80, 94, 99 , 70%);
+    border-radius: 12px;
+    margin: 20px 0;
+
+}
+/* end content css */
+
+/* home page css */
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.info p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 20px 0;
+    text-align: left;
+}
+
+div h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.timing dl {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem 2rem;
+  margin: 0;
+  align-content: center;
+}
+.timing dl dt {
+  font-weight: bold;
+}
+.timing dl dd {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+/* end home page css */
